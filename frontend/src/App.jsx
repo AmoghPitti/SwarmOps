@@ -20,7 +20,6 @@ const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   //const [isAuthenticated, setIsAuthenticated] = useState(false); // Authentication state
   // <HorNav/>
- 
 
   return (
     <ThemeProvider>

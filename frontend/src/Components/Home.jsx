@@ -36,7 +36,7 @@ const Home = () => {
     }
  
     return (
-        <div className={`h-screen flex flex-col items-center justify-center ${isDarkTheme ? 'bg-gray-900' : 'bg-white'}`}>
+        <div className={`h-screen flex flex-col items-center justify-center ${isDarkTheme ? 'bg-gray-900' : 'bg-white'} p-4`}>
             <div className="flex items-center justify-center mb-6">
                 <img src={logo} alt="SwarmOps Icon" className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 mr-2 align-middle" />
                 <h1 className={`text-3xl sm:text-4xl md:text-5xl font-extrabold ${isDarkTheme ? 'text-white' : 'text-blue-500'}`}>SwarmOps</h1>
@@ -75,7 +75,7 @@ const Home = () => {
                 </div>
             </div>
  
-            <div className={`text-center mt-8 ${isDarkTheme ? 'text-gray-300' : 'text-gray-500'}`}>
+            <div className={`text-center mt-8 mb-4 ${isDarkTheme ? 'text-gray-300' : 'text-gray-500'}`}>
                 <p>© 2024 SwarmOps. All rights reserved.</p>
             </div>
         </div>

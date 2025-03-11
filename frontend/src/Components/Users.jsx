@@ -83,7 +83,7 @@ const Users = () => {
     <>
     <div className="container mx-auto p-6">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-4xl font-bold">Users</h1>
+        <h1 className="ml-3 text-4xl font-bold text-gray-900">Users</h1>
         <button
           onClick={handleAddUser}
           className="bg-delftBlue text-white px-4 py-2 rounded flex items-center"
@@ -99,6 +99,7 @@ const Users = () => {
           <thead className="bg-delftBlue text-white">
             <tr>
               <th className="py-3 px-6 text-center">Name</th>
+              <th className="py-3 px-6 text-center">Email</th>
               <th className="py-3 px-6 text-center">Role</th>
               <th className="py-3 px-6 text-center">Edit</th>
               <th className="py-3 px-6 text-center">Delete</th>
@@ -107,7 +108,8 @@ const Users = () => {
           <tbody>
             {users.map(user => (
               <tr key={user.username} className="border-b hover:bg-gray-200">
-                <td className="py-3 px-6 text-center text-blue-600">{user.username}</td>
+                <td className="py-3 px-6 text-center">{user.username}</td>
+                <td className="py-3 px-6 text-center text-blue-700">{user.email}</td>
                 <td className="py-3 px-6 text-center">
                   {editUser === user.username ? (
                     <select
